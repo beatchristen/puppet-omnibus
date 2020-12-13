@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+GITLAB_BACKUP_LATEST="$(cd /var/opt/gitlab/backups && find . -name "*_gitlab_backup.tar" | sort -n | tail -1 | cut -c3- )"
+export GITLAB_BACKUP_LATEST
+
+echo "Latest gitlab backup is ${GITLAB_BACKUP_LATEST}"
+echo "Restore with gitlab-backup restore BACKUP=${GITLAB_BACKUP_LATEST%%_gitlab_backup.tar} force=yes"
