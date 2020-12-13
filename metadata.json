@@ -1,15 +1,15 @@
 {
-  "name": "puppet-omnibus",
+  "name": "systemconfig-omnibus",
   "version": "1.0.0",
-  "author": "systarch",
+  "author": "Systemarchitektur AG",
   "summary": "Installs the gitlab service as an omnibus installation with backup assistance",
   "tags": [
     "gitlab",
     "omnibus"
   ],
   "license": "Apache-2.0",
-  "source": "https://github.com/systarch/puppet-omnibus",
-  "project_page": "https://github.com/systarch/puppet-omnibus",
+  "source": "https://github.com/systarch/systemconfig-omnibus",
+  "project_page": "https://github.com/systarch/systemconfig-omnibus",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
@@ -21,6 +21,7 @@
     }
   ],
   "operatingsystem_support": [
-    { "operatingsystem": "Debian", "operatingsystemrelease": ["10"]}
+    { "operatingsystem": "Debian", "operatingsystemrelease": ["10"]},
+    { "operatingsystem": "Ubuntu", "operatingsystemrelease": ["20.04"]}
   ]
 }
